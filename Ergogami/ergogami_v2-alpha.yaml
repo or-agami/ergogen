@@ -29,7 +29,6 @@ points:
         top:
       columns:
         pinkie:
-          spread: cx
           rows:
             bottom:
               bind: [1, 1, 0, 0]
