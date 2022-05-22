@@ -33,65 +33,65 @@ points:
           rows:
             bottom:
               bind: [1, 1, 0, 0]
-              column_net: 
+              column_net: P1
             home:
               bind: [1, 1, 1, 0]
-              column_net: 
+              column_net: P2
             top:
               bind: [0, 1, 1, 0]
-              column_net: 
+              column_net: P3
         ring:
           stagger: 3
           spread: cx
           rows:
             bottom:
               bind: [1, 1, 3, 1]
-              column_net: 
+              column_net: P4
             home:
               bind: [1, 1, 1, 1]
-              column_net: 
+              column_net: P5
             top:
               bind: [0, 1, 1, 0]
-              column_net: 
+              column_net: P6
         middle:
           stagger: 2
           spread: cx
           rows:
             bottom:
               bind: [1, 1, 5, 1]
-              column_net: 
+              column_net: P7
             home:
               bind: [1, 1, 1, 1]
-              column_net: 
+              column_net: P8
             top:
               bind: [0, 0, 1, 0]
-              column_net: 
+              column_net: P9
         index:
           stagger: -2
           spread: cx
           rows:
             bottom:
               bind: [1, 1, 3, 1]
-              column_net: 
+              column_net: P10
             home:
               bind: [1, 1, 1, 1]
-              column_net: 
+              column_net: P11
             top:
               bind: [0, 0, 1, 1]
-              column_net: 
+              column_net: P12
         inner:
           stagger: -1
           spread: cx
           rows:
             bottom:
               bind: [1, cx, 0.5, 1]
-              column_net: 
+              column_net: P13
             home:
               bind: [0.5, cx, 1, 1]
-              column_net: 
+              column_net: P14
             top:
               bind: [0, 0, 1, 1]
-              column_net: 
+              column_net: P15
     thumb:
       anchor:
         ref: main_index_bottom
@@ -104,7 +104,7 @@ points:
           rows:
             bottom:
               bind: [0, 4, 0, 0]
-              column_net: 
+              column_net: P16
         second:
           spread: cx-1
           rotate: -15
@@ -112,7 +112,7 @@ points:
           rows:
             bottom:
               bind: [4, 4, 0, 4]
-              column_net: 
+              column_net: P17
         third:
           spread: cx-1
           rotate: -15
@@ -120,7 +120,7 @@ points:
           rows:
             bottom:
               bind: [0, 0, 0, 4]
-              column_net: 
+              column_net: P18
 outlines:
   exports:
     raw:
