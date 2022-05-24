@@ -207,6 +207,34 @@ pcbs:
           ref: main_inner_bottom
           shift: [cx+1, 1.5cy]
           rotate: 90
+      Via1:
+        type: via
+        anchor: 
+          ref: main_inner_bottom
+          shift: [cx+3, -0.5cy]
+        nets: 
+          net: GND 
+      Via2:
+        type: via
+        anchor: 
+          ref: main_inner_bottom
+          shift: [cx+3.5, -0.5cy]
+        nets: 
+          net: RST
+      Via3:
+        type: via
+        anchor: 
+          ref: main_inner_bottom
+          shift: [cx+5, -0.5cy]
+        nets: 
+          net: RAW 
+      Via4:
+        type: via
+        anchor: 
+          ref: main_inner_bottom
+          shift: [cx+6, -0.5cy]
+        nets: 
+          net: pos 
 cases:
   test:
     - name: preview
