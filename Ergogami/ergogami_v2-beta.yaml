@@ -183,8 +183,8 @@ pcbs:
         type: pcm12
         anchor:
           ref: thumb_third_bottom
-          shift: [-10, 20]
-          rotate: 130
+          shift: [-5, 20]
+          rotate: 132
         nets:
           from: pos  
           to: RAW
@@ -198,8 +198,8 @@ pcbs:
           r2: GND
         anchor:
           ref: thumb_third_bottom
-          shift: [0, 15]
-          rotate: 130
+          shift: [2, 15]
+          rotate: 132
         params:
           reverse: true 
 ## Battery:
