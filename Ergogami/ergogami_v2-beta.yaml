@@ -147,7 +147,7 @@ outlines:
     fillet_cutout:
       - type: outline
         name: raw
-        fillet: 3
+        fillet: 0
     cutout:
       - type: outline
         name: fillet_cutout
