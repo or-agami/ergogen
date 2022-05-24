@@ -38,7 +38,7 @@ points:
               column_net: P5
             top:
               bind: [1, 1, 1, 1]
-              column_net: P3
+              column_net: P20
         ring:
           stagger: 3
           spread: cx
