@@ -152,7 +152,7 @@ outlines:
       - type: outline
         name: fillet_cutout
         fillet: 0.5
-    plate:
+    preview:
       - cutout
       - type: keys
         side: left
@@ -169,3 +169,7 @@ pcbs:
         type: promicro_pretty
         anchor:
           ref: main_inner_bottom
+cases:
+  test:
+    - name: cutout
+      shift: [-50, 0, 0]
