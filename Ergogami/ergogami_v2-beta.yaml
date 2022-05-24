@@ -169,17 +169,17 @@ pcbs:
         layer: Edge.Cuts
       keycaps:
         outline: keycaps_outline
-        layer: User.Eco1
+        layer: Eco1.User
     footprints:
 ## Nice!Nano Controllers:
-      promicro:
+      NiceNano:
         type: promicro_pretty
         anchor:
           ref: main_inner_bottom
-          shift: [cx, 0.5cy]
-          rotate: 90
+          shift: [cx+1, 0.5cy]
+          rotate: -90
 ## Slider Switch:
-      pcm12:
+      SliderSwitch:
         type: pcm12
         anchor:
           ref: thumb_third_bottom
@@ -191,7 +191,7 @@ pcbs:
         params:
           reverse: true 
 ## Reset Switch:
-      b3u1000p:
+      ResetSwitch:
         type: b3u1000p
         nets:
           r1: RST  
@@ -203,7 +203,7 @@ pcbs:
         params:
           reverse: true 
 ## Battery:
-      bat:
+      Battery:
         type: bat
         nets: 
           neg: GND
