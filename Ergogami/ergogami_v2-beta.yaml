@@ -171,13 +171,47 @@ pcbs:
         outline: keycaps_outline
         layer: User.Eco1
     footprints:
+## Nice!Nano Controllers:
       promicro:
         type: promicro_pretty
         anchor:
           ref: main_inner_bottom
           shift: [cx, 0.5cy]
           rotate: 90
+## Slider Switch:
+      pcm12:
+        type: pcm12
+        anchor:
+          ref: thumb_third_bottom
+          shift: [3, 0]
+          rotate: -110
+        nets:
+          from: pos  
+          to: RAW
+        params:
+          reverse: true 
+## Reset Switch:
+      b3u1000p:
+        type: b3u1000p
+        nets:
+          r1: RST  
+          r2: GND
+        anchor:
+          ref: thumb_third_bottom
+          shift: [3, 23]
+          rotate: -110
+        params:
+          reverse: true 
+## Battery:
+      bat:
+        type: bat
+        nets: 
+          neg: GND
+        anchor:
+          ref: thumb_third_bottom
+          shift: [12.5, 57]
+          rotate: -20
 cases:
   test:
-    - name: cutouta
+    - name: preview
       shift: [-50, 0, 0]
