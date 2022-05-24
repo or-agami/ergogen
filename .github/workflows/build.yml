@@ -24,7 +24,7 @@ jobs:
     - name: Creating Archive Folder
       run: mkdir build | mkdir build/artifacts
     - name: Building
-      run: node src/cli.js Ergogami/ergogami_v2-alpha.yaml -o build/artifacts/ergogami
+      run: node src/cli.js Ergogami/ergogami_v2-beta.yaml -o build/artifacts/ergogami
     - name: Archiving
       uses: actions/upload-artifact@v2
       with:
