@@ -38,7 +38,7 @@ points:
               column_net: P5
             top:
               bind: [1, 1, 1, 1]
-              column_net: P1
+              column_net: P3
         ring:
           stagger: 3
           spread: cx
@@ -51,7 +51,7 @@ points:
               column_net: P18
             top:
               bind: [1, 1, 1, 1]
-              column_net: P0
+              column_net: P21
         middle:
           stagger: 2
           spread: cx
@@ -64,7 +64,7 @@ points:
               column_net: P4
             top:
               bind: [1, 1, 1, 1]
-              column_net: P21
+              column_net: P2
         index:
           stagger: -2
           spread: cx
@@ -77,7 +77,7 @@ points:
               column_net: P19
             top:
               bind: [1, 1, 1, 1]
-              column_net: P2
+              column_net: P0
         inner:
           stagger: -1
           spread: cx
@@ -90,7 +90,7 @@ points:
               column_net: P3
             top:
               bind: [1, 1, 1, 1]
-              column_net: P20
+              column_net: P1
     thumb:
       anchor:
         ref: main_index_bottom
