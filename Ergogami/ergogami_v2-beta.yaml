@@ -169,7 +169,7 @@ pcbs:
         layer: Edge.Cuts
       keycaps:
         outline: keycaps_outline
-        layer: User.Drawings
+        layer: Eco1.User
     footprints:
 ## Nice!Nano Controllers:
       NiceNano:
@@ -183,8 +183,8 @@ pcbs:
         type: pcm12
         anchor:
           ref: thumb_third_bottom
-          shift: [5, 30]
-          rotate: 35
+          shift: [5, 25]
+          rotate: 115
         nets:
           from: pos  
           to: RAW
@@ -198,8 +198,8 @@ pcbs:
           r2: GND
         anchor:
           ref: thumb_third_bottom
-          shift: [10, 15]
-          rotate: 35
+          shift: [7, 15]
+          rotate: 115
         params:
           reverse: true 
 ## Battery:
