@@ -166,12 +166,18 @@ pcbs:
     outlines:
       main:
         outline: cutout
+        layer: Edge.Cuts
+      keycaps:
+        outline: keycaps_outline
+        layer: User.Eco1
     footprints:
       promicro:
-        type: promicro
+        type: promicro_pretty
         anchor:
           ref: main_inner_bottom
+          shift: [cx, 0.5cy]
+          rotate: 90
 cases:
   test:
-    - name: cutout
+    - name: cutouta
       shift: [-50, 0, 0]
