@@ -123,10 +123,13 @@ points:
 outlines:
   exports:
     raw:
-      - type: keys
+      first:
+        type: keys
         side: left
         size: [cx, cy]
-      - type: polygon
+      second:
+        #operation: stack
+        type: polygon
         points:
           - ref: main_inner_home
             shift: [1.5cx+2, 0.5cy+2]
@@ -138,7 +141,6 @@ outlines:
             shift: [-0.5cx, -0.5cy]
           - ref: main_inner_home
             shift: [-1.2cx, 0.5cy+2]
-#        operation: stack
     keycaps_outline:
       - type: keys
         side: left
