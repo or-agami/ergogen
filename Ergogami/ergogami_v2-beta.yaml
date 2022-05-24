@@ -181,7 +181,7 @@ pcbs:
         type: pcm12
         anchor:
           ref: thumb_third_bottom
-          shift: [4, 14]
+          shift: [3.2, 14]
           rotate: 132
         nets:
           from: pos  
