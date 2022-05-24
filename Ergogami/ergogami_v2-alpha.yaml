@@ -31,65 +31,65 @@ points:
         pinkie:
           rows:
             bottom:
-              bind: [1, 1, 0, 0]
+              bind: [1, 1, 1, 1]
               column_net: P1
             home:
-              bind: [1, 1, 1, 0]
+              bind: [1, 1, 1, 1]
               column_net: P2
             top:
-              bind: [0, 1, 1, 0]
+              bind: [1, 1, 1, 1]
               column_net: P3
         ring:
           stagger: 3
           spread: cx
           rows:
             bottom:
-              bind: [1, 1, 3, 1]
+              bind: [1, 1, 1, 1]
               column_net: P4
             home:
               bind: [1, 1, 1, 1]
               column_net: P5
             top:
-              bind: [0, 1, 1, 0]
+              bind: [1, 1, 1, 1]
               column_net: P6
         middle:
           stagger: 2
           spread: cx
           rows:
             bottom:
-              bind: [1, 1, 5, 1]
+              bind: [1, 1, 1, 1]
               column_net: P7
             home:
               bind: [1, 1, 1, 1]
               column_net: P8
             top:
-              bind: [0, 0, 1, 0]
+              bind: [1, 1, 1, 1]
               column_net: P9
         index:
           stagger: -2
           spread: cx
           rows:
             bottom:
-              bind: [1, 1, 3, 1]
+              bind: [1, 1, 1, 1]
               column_net: P10
             home:
               bind: [1, 1, 1, 1]
               column_net: P11
             top:
-              bind: [0, 0, 1, 1]
+              bind: [1, 1, 1, 1]
               column_net: P12
         inner:
           stagger: -1
           spread: cx
           rows:
             bottom:
-              bind: [1, cx, 0.5, 1]
+              bind: [1, 1, 1, 1]
               column_net: P13
             home:
-              bind: [0.5, cx, 1, 1]
+              bind: [1, 1, 1, 1]
               column_net: P14
             top:
-              bind: [0, 0, 1, 1]
+              bind: [1, 1, 1, 1]
               column_net: P15
     thumb:
       anchor:
@@ -102,37 +102,43 @@ points:
         first:
           rows:
             bottom:
-              bind: [0, 4, 0, 0]
+              bind: [1, 4, 1, 1]
               column_net: P16
         second:
-          spread: cx-1
+          spread: cx-0.5
           rotate: -15
           origin: [-9, -9.5]
           rows:
             bottom:
-              bind: [4, 4, 0, 4]
+              bind: [4, 4, 1, 4]
               column_net: P17
         third:
-          spread: cx-1
+          spread: cx-0.5
           rotate: -15
           origin: [-9, -9.5]
           rows:
             bottom:
-              bind: [0, 0, 0, 4]
+              bind: [1, 1, 1, 4]
               column_net: P18
 outlines:
   exports:
     raw:
       - type: keys
         side: left
-        size: [cx, cx]
-        corner: 2
-      - type: rectangle
-        size: [25, 23]
-        anchor:
-          ref: thumb_third_bottom
-          shift: [8.3, 8.5]
-          rotate: 135.5
+        size: [cx, cy]
+        corner: 0
+      - type: polygon
+        points:
+          - ref: main_inner_home
+            shift: [1.5cx+2, 0.5cy+2]
+          - ref: main_inner_bottom
+            shift: [1.5cx+2, -0.5cy]
+          - ref: thumb_third_bottom
+            shift: [0.5cx+1, 0.5cy+1]
+          - ref: main_index_bottom
+            shift: [-0.5cx, -0.5cy]
+          - ref: main_inner_home
+            shift: [-1.5cx, 0.5cy+2]
     keycaps_outline:
       - type: keys
         side: left
@@ -141,11 +147,18 @@ outlines:
     fillet_cutout:
       - type: outline
         name: raw
-        fillet: 4
+        fillet: 3
     cutout:
       - type: outline
         name: fillet_cutout
         fillet: 0.5
+    preview:
+      - cutout
+      - type: keys
+        side: left
+        size: [cx-0.5, cy-0.5]
+        bound: false
+        operation: subtract
 pcbs:
   ergogami_v2:
     outlines:
@@ -156,3 +169,7 @@ pcbs:
         type: promicro_pretty
         anchor:
           ref: main_inner_bottom
+cases:
+  test:
+    - name: cutout
+      shift: [-50, 0, 0]
