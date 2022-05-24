@@ -211,28 +211,28 @@ pcbs:
         type: via
         anchor: 
           ref: main_inner_bottom
-          shift: [cx+3, -0.5cy]
+          shift: [cx+4, -0.5cy+2]
         nets: 
           net: GND 
       Via2:
         type: via
         anchor: 
           ref: main_inner_bottom
-          shift: [cx+3.5, -0.5cy]
+          shift: [cx+5.1, -0.5cy+2]
         nets: 
           net: RST
       Via3:
         type: via
         anchor: 
           ref: main_inner_bottom
-          shift: [cx+5, -0.5cy]
+          shift: [cx+8, -0.5cy]
         nets: 
           net: RAW 
       Via4:
         type: via
         anchor: 
           ref: main_inner_bottom
-          shift: [cx+6, -0.5cy]
+          shift: [cx+9.5, -0.5cy]
         nets: 
           net: pos 
 cases:
