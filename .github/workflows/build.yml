@@ -22,7 +22,9 @@ jobs:
     - name: Installing npm
       run: npm install
     - name: Creating Archive Folder
-      run: mkdir build | mkdir build/artifacts
+      run: |
+        mkdir build
+        mkdir build/artifacts
     - name: Building
       run: node src/cli.js Ergogami/ergogami_v2-beta.yaml -o build/artifacts/ergogami
     - name: Archiving
