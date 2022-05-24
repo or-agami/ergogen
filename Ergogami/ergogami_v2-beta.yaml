@@ -225,14 +225,14 @@ pcbs:
         type: via
         anchor: 
           ref: thumb_third_bottom
-          shift: [0, 12]
+          shift: [-1, 13]
         nets: 
           net: RAW 
       Via4:
         type: via
         anchor: 
           ref: thumb_third_bottom
-          shift: [0, 10]
+          shift: [2, 10]
         nets: 
           net: pos 
 cases:
