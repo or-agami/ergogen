@@ -94,7 +94,7 @@ points:
     thumb:
       anchor:
         ref: main_index_bottom
-        shift: [1, -(cy+1)]
+        shift: [-1.1, -cy-1]
         rotate: -6
       rows:
         bottom:
@@ -102,7 +102,7 @@ points:
         first:
           rows:
             bottom:
-              bind: [1, 4, 1, 1]
+              bind: [2, 4, 1, 1]
               column_net: P16
         second:
           spread: cx-0.5
@@ -126,7 +126,6 @@ outlines:
       - type: keys
         side: left
         size: [cx, cy]
-        corner: 0
       - type: polygon
         points:
           - ref: main_inner_home
@@ -135,10 +134,11 @@ outlines:
             shift: [1.5cx+2, -0.5cy]
           - ref: thumb_third_bottom
             shift: [0.5cx+1, 0.5cy+1]
-          - ref: main_index_bottom
+          - ref: thumb_first_bottom
             shift: [-0.5cx, -0.5cy]
           - ref: main_inner_home
-            shift: [-1.5cx, 0.5cy+2]
+            shift: [-1.2cx, 0.5cy+2]
+#        operation: stack
     keycaps_outline:
       - type: keys
         side: left
@@ -147,7 +147,7 @@ outlines:
     fillet_cutout:
       - type: outline
         name: raw
-        fillet: 1.5
+        fillet: 3
     cutout:
       - type: outline
         name: fillet_cutout
@@ -162,12 +162,11 @@ outlines:
 pcbs:
   ergogami_v2:
     outlines:
-      edge:
+      main:
         outline: cutout
-        layer: Edge.Cuts
     footprints:
       promicro:
-        type: promicro_pretty
+        type: promicro
         anchor:
           ref: main_inner_bottom
 cases:
