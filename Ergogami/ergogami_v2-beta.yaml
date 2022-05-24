@@ -183,7 +183,7 @@ pcbs:
         type: pcm12
         anchor:
           ref: thumb_third_bottom
-          shift: [-2, 18]
+          shift: [-1, 18]
           rotate: 132
         nets:
           from: pos  
@@ -198,7 +198,7 @@ pcbs:
           r2: GND
         anchor:
           ref: thumb_third_bottom
-          shift: [3, 13]
+          shift: [4, 12]
           rotate: 132
         params:
           reverse: true 
