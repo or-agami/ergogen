@@ -151,7 +151,7 @@ outlines:
     cutout:
       - type: outline
         name: fillet_cutout
-        fillet: 0
+        fillet: 0.4
     preview:
       - cutout
       - type: keys
